@@ -19,7 +19,27 @@
       <span>
         <button class="text-white rounded-3xl bg-coralOrange h-10 w-32 font-semibold hidden md:block">Get Started</button>
       </span>
+
+      <!-- Hamburger -->
+      <button id="hamburger" class="block hamburger md:hidden focus:outline-none">
+        <span class="slash-one"></span>
+        <span class="slash-two"></span>
+        <span class="slash-three"></span>
+      </button>
+  
+      <!-- Menue -->
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a class="hover:text-slate-600" href="#">Pricing</a>
+          <a class="hover:text-slate-600" href="#">Product</a>
+          <a class="hover:text-slate-600" href="#">About Us</a>
+          <a class="hover:text-slate-600" href="#">Careers</a>
+          <a class="hover:text-slate-600" href="#">Community</a>
+        </div>
+      </div>
+
     </div>
+
     <div class="container mx-auto p-6 my-5 flex justify-between flex-col-reverse md:flex-row">
       <div class="text-center md:text-left md:w-1/2">
         <h1 class="font-bold text-3xl md:text-5xl my-4">Bring everyone together to build better products</h1>
@@ -114,7 +134,7 @@
       </div>
     </div>
 
-    <div class=" bg-coralOrange py-6 md:py-6">
+    <div id="cta" class="bg-coralOrange py-6 md:py-6">
       <div class="container mx-auto flex flex-col md:justify-between p-6 md:flex-row">
         <div class="mb-8 md:mb-0">
           <h2 class="text-white text-center text-2xl font-bold md:max-w-md md:text-4xl md:text-left">Simplify how your team works today</h2>
@@ -125,8 +145,8 @@
       </div>
     </div>
 
-    <footer class="bg-black py-6 md:py-6">
-      <div class="container mx-auto flex flex-col-reverse justify-center items-center md:justify-between md:flex-row space-y-8 md:space-y-0">
+    <footer class="bg-black py-6">
+      <div class="container p-6 mx-auto flex flex-col-reverse justify-center items-center md:justify-between md:flex-row space-y-8 md:space-y-0">
 
         <div class="my-6 flex flex-col-reverse items-center justify-between gap-y-14 space-y-16 md:flex-col md:space-y-0 md:items-start md:my-0">
           <div>
@@ -141,7 +161,7 @@
           </div>
         </div>
 
-        <div class="flex justify-around space-x-32">          
+        <div class="flex justify-around space-x-32">
           <div class="my-6 flex flex-col space-y-3">
             <a href="#" class="text-neutral-300">Home</a>
             <a href="#" class="text-neutral-300">Pricing</a>
