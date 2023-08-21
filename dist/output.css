@@ -936,6 +936,56 @@ body {
   background-repeat: no-repeat;
 }
 
+.hamburger {
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.slash-one,
+.slash-two,
+.slash-three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 3px;
+  background-color: black;
+  transform: rotate(0);
+  transition: 0.8s;
+}
+
+.slash-two {
+  transform: translateY(7px);
+}
+
+.slash-three {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .slash-one {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .slash-two {
+  display: none;
+}
+
+.open .slash-three {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+#menu {
+  transition: 2s;
+}
+
 @media (max-width: 576px) {
   body {
     background-position: 50px -50px;
