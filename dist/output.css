@@ -893,6 +893,26 @@ video {
   line-height: 1.25;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
 .text-coralOrange {
   --tw-text-opacity: 1;
   color: rgb(242 92 51 / var(--tw-text-opacity));
